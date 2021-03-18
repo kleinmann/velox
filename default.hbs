@@ -32,11 +32,14 @@
   <body class="{{body_class}}">
     {{{body}}}
 
-    <footer class="site-footer">
+    <footer class="site-footer text center padding">
       <time datetime="{{date format="YYYY"}}">{{date format="YYYY"}} <a href="/">{{@blog.title}}</a>. All rights reserved.</time>
-      <div><a href="https://github.com/dreyacosta/velox" target="_blank"><strong>Velox theme</strong></a> by <a href="http://dreyacosta.com/">David Rey</a></div>
+      <div><a href="/imprint"><strong>Imprint / Impressum</strong></a></div>
+      <div><a href="https://github.com/dreyacosta/velox" target="_blank">Velox theme</a> by <a href="http://dreyacosta.com/">David Rey</a></div>
       <div>Proudly published with <a href="http://ghost.org"><span>Ghost</span></a></div>
     </footer>
+
+    {{ghost_foot}}
 
     {{> loaders/load-fonts}}
     {{> loaders/load-prism}}

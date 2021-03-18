@@ -2,7 +2,7 @@
 
 {{#post}}
 
-{{#if image}}
+{{#if feature_image}}
 {{> "header-post-cover"}}
 {{else}}
 {{> "header-blog-post"}}
@@ -23,9 +23,9 @@
 
     {{#author}}
     <footer>
-      {{#if image}}
+      {{#if profile_image}}
       <figure class="desktop">
-        <img src="{{image}}" alt="Author image" />
+        <img src="{{profile_image}}" alt="Author image" />
       </figure>
       {{/if}}
 
@@ -41,7 +41,7 @@
 <aside class="site-width">
   <h6>Read more</h6>
   {{#next_post}}
-  <a class="{{#if image}}cover" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+  <a class="{{#if feature_image}}cover" style="background-image: url({{img_url}}){{else}}no-cover{{/if}}" href="{{url}}">
     <section class="post">
       <h5>{{title}}</h5>
       <p>{{excerpt words="19"}}&hellip;</p>
@@ -49,7 +49,7 @@
   </a>
   {{/next_post}}
   {{#prev_post}}
-  <a class="right {{#if image}}cover" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+  <a class="right {{#if feature_image}}cover" style="background-image: url({{img_url}}){{else}}no-cover{{/if}}" href="{{url}}">
     <section class="post">
       <h5>{{title}}</h5>
       <p>{{excerpt words="19"}}&hellip;</p>
@@ -62,6 +62,6 @@
   Here, you can add disqus comment.
   Also go to partials/disqus-comment to set your SHORTNAME.
 }}
-{{> loaders/load-disqus-comment}}
+{{!> loaders/load-disqus-comment}}
 
 {{/post}}

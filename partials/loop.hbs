@@ -4,12 +4,12 @@
     <h2><a href="{{url}}">{{{title}}}</a></h2>
   </header>
   <div>
-    <p>{{excerpt words="40"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
+    <p>{{excerpt words="40"}} <a class="read-more" href="{{url}}"> Read more&raquo;</a></p>
   </div>
   <footer>
-    {{#if author.image}}
+    {{#if author.profile_image}}
     <figure class="desktop">
-      <img src="{{author.image}}" alt="Foo" class="border circle" />
+      <img src="{{author.profile_image}}" alt="{{author.name}}" class="border circle" />
     </figure>
     {{/if}}
     <div>
