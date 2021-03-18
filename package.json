@@ -1,4 +1,17 @@
 {
-  "name": "Velox",
-  "version": "0.3.0"
+  "name": "velox",
+  "author": {
+    "name": "David Rey",
+    "email": "david.rey.acosta@gmail.com"
+  },
+  "version": "0.3.0",
+  "keywords": [
+    "ghost-theme"
+  ],
+  "engines": {
+    "ghost-api": "v4"
+  },
+  "config": {
+    "posts_per_page": 5
+  }
 }

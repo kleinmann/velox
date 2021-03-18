@@ -4,7 +4,7 @@
 {{#author}}
 <header class="main-header blog {{#if cover_image}}cover" style="background-image: url({{cover_image}}){{else}}no-cover{{/if}}">
   <nav class="site-width">
-    {{#if @blog.logo}}<a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+    {{#if @site.logo}}<a href="{{@site.url}}"><img src="{{@site.logo}}" alt="Blog Logo" /></a>{{/if}}
     <h1 class="blog-title">{{name}}</h1>
     {{#if bio}}<h3 class="blog-description">{{bio}}</h3>{{/if}}
     {{#if location}}<div class="author-location">{{location}}</div>{{/if}}

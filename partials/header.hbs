@@ -1,18 +1,18 @@
 <header class="main-header text center">
-  {{#if @blog.cover_image}}
+  {{#if @site.cover_image}}
 
-  <div class="cover" style="background-image: url({{@blog.cover_image}})">
+  <div class="cover" style="background-image: url({{@site.cover_image}})">
     <div class="cover-mask padding">
-      {{#if @blog.logo}}
+      {{#if @site.logo}}
       <nav>
-        <a href="{{@blog.url}}" class="inline blog-logo-extra-border border circle">
-          <img src="{{@blog.logo}}" alt="{{@blog.title}}" class="blog-logo center border circle" />
+        <a href="{{@site.url}}" class="inline blog-logo-extra-border border circle">
+          <img src="{{@site.logo}}" alt="{{@site.title}}" class="blog-logo center border circle" />
         </a>
       </nav>
       {{/if}}
       <div class="site_width">
-        <div class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></div>
-        {{!-- p class="blog-description">{{@blog.description}}</p> --}}
+        <div class="blog-title"><a href="{{@site.url}}">{{@site.title}}</a></div>
+        {{!-- p class="blog-description">{{@site.description}}</p> --}}
 	<p class="blog-description"><a href="/about-me">About me</a></p>
       </div>
     </div>
@@ -26,16 +26,16 @@
   {{else}}
 
   <div class="no-cover site_width padding border solid bottom">
-    {{#if @blog.logo}}
+    {{#if @site.logo}}
     <nav>
-      <a href="{{@blog.url}}" class="inline blog-logo-extra-border border circle">
-        <img src="{{@blog.logo}}" alt="{{@blog.title}}" class="blog-logo center border circle" />
+      <a href="{{@site.url}}" class="inline blog-logo-extra-border border circle">
+        <img src="{{@site.logo}}" alt="{{@site.title}}" class="blog-logo center border circle" />
       </a>
     </nav>
     {{/if}}
     <div class="site_width">
-      <div class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></div>
-      <p class="blog-description">{{@blog.description}}</p>
+      <div class="blog-title"><a href="{{@site.url}}">{{@site.title}}</a></div>
+      <p class="blog-description">{{@site.description}}</p>
     </div>
 
     {{!

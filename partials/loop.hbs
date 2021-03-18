@@ -7,13 +7,13 @@
     <p>{{excerpt words="40"}} <a class="read-more" href="{{url}}"> Read more&raquo;</a></p>
   </div>
   <footer>
-    {{#if author.profile_image}}
+    {{#if primary_author.profile_image}}
     <figure class="desktop">
-      <img src="{{author.profile_image}}" alt="{{author.name}}" class="border circle" />
+      <img src="{{primary_author.profile_image}}" alt="{{primary_author.name}}" class="border circle" />
     </figure>
     {{/if}}
     <div>
-      {{author}}
+      {{authors}}
       {{tags prefix=" on "}}
       <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time>
     </div>

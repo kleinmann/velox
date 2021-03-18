@@ -2,12 +2,12 @@
   <nav>
     <ul>
       <li>
-        {{#if author.profile_image}}<img src="{{author.profile_image}}" alt="Author image" />{{/if}}
-        <span>{{author}}</span>
+        {{#if primary_author.profile_image}}<img src="{{primary_author.profile_image}}" alt="Author image" />{{/if}}
+        <span>{{authors}}</span>
       </li>
     </ul>
     <ul>
-      <li><a href="{{@blog.url}}"><strong>{{@blog.title}}</strong></a></li>
+      <li><a href="{{@site.url}}"><strong>{{@site.title}}</strong></a></li>
     </ul>
   </nav>
 

@@ -1,8 +1,8 @@
-<header class="main-header blog {{#if @blog.cover_image}}cover" style="background-image: url({{@blog.cover_image}}){{else}}lazy-cover-loader no-cover{{/if}}">
+<header class="main-header blog {{#if @site.cover_image}}cover" style="background-image: url({{@site.cover_image}}){{else}}lazy-cover-loader no-cover{{/if}}">
   <nav class="site-width">
-    {{#if @blog.logo}}<a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-    <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
-    <h3 class="blog-description">{{@blog.description}}</h3>
+    {{#if @site.logo}}<a href="{{@site.url}}"><img src="{{@site.logo}}" alt="Blog Logo" /></a>{{/if}}
+    <h1 class="blog-title"><a href="{{@site.url}}">{{@site.title}}</a></h1>
+    <h3 class="blog-description">{{@site.description}}</h3>
 
     {{!> "social"}}
   </nav>
